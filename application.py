@@ -114,7 +114,7 @@ def findAll():
         output[i] = x
         output[i].pop('_id')
         i += 1
-    return jsonify({'result':output})
+    return jsonify({'result ':output})
 
 
 if __name__ == "__main__":

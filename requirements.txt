@@ -3,6 +3,4 @@ gunicorn
 django-heroku
 requests
 flask
-render_template
-jsonify
 pymongo

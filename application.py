@@ -39,9 +39,28 @@ def get_all_countries():
                 'CCPI 2010' : i['CCPI 2010'],
                 'EPI 2012' : i['EPI 2012'],
                 'CCPI 2012' : i['CCPI 2012'],
+                'EPI 2014' : i['EPI 2014'],
+                'CCPI 2014' : i['CCPI 2014'],
+                'EPI 2016' : i['EPI 2016'],
+                'CCPI 2016' : i['CCPI 2016'],
+                'EPI 2018' : i['EPI 2018'],
+                'CCPI 2018' : i['CCPI 2018'],
+                'EPI 2020' : i['EPI 2020'],
+                'CCPI 2020' : i['CCPI 2020'],
                 'GDP PER CAPITA 2008' : i['GDP PER CAPITA 2008'],
                 'GDP PER CAPITA 2010' : i['GDP PER CAPITA 2010'],
-                'GDP PER CAPITA 2012' : i['GDP PER CAPITA 2012']
+                'GDP PER CAPITA 2012' : i['GDP PER CAPITA 2012'],
+                'GDP PER CAPITA 2014' : i['GDP PER CAPITA 2014'],
+                'GDP PER CAPITA 2016' : i['GDP PER CAPITA 2016'],
+                'GDP PER CAPITA 2018' : i['GDP PER CAPITA 2018'],
+                'GDP PER CAPITA 2020' : i['GDP PER CAPITA 2020'],
+                'GNI per capita 2008' : i['GNI per capita 2008'],
+                'GNI per capita 2010' : i['GNI per capita 2010'],
+                'GNI per capita 2012' : i['GNI per capita 2012'],
+                'GNI per capita 2014' : i['GNI per capita 2014'],
+                'GNI per capita 2016' : i['GNI per capita 2016'],
+                'GNI per capita 2018' : i['GNI per capita 2018'],
+                'GNI per capita 2019' : i['GNI per capita 2019']
                 })
   return jsonify({'result' : output})
 
@@ -57,7 +76,29 @@ def get_one_country(Country):
                 'EPI 2010' : i['EPI 2010'],
                 'CCPI 2010' : i['CCPI 2010'],
                 'EPI 2012' : i['EPI 2012'],
-                'CCPI 2012' : i['CCPI 2012']
+                'CCPI 2012' : i['CCPI 2012'],
+                'EPI 2014' : i['EPI 2014'],
+                'CCPI 2014' : i['CCPI 2014'],
+                'EPI 2016' : i['EPI 2016'],
+                'CCPI 2016' : i['CCPI 2016'],
+                'EPI 2018' : i['EPI 2018'],
+                'CCPI 2018' : i['CCPI 2018'],
+                'EPI 2020' : i['EPI 2020'],
+                'CCPI 2020' : i['CCPI 2020'],
+                'GDP PER CAPITA 2008' : i['GDP PER CAPITA 2008'],
+                'GDP PER CAPITA 2010' : i['GDP PER CAPITA 2010'],
+                'GDP PER CAPITA 2012' : i['GDP PER CAPITA 2012'],
+                'GDP PER CAPITA 2014' : i['GDP PER CAPITA 2014'],
+                'GDP PER CAPITA 2016' : i['GDP PER CAPITA 2016'],
+                'GDP PER CAPITA 2018' : i['GDP PER CAPITA 2018'],
+                'GDP PER CAPITA 2020' : i['GDP PER CAPITA 2020'],
+                'GNI per capita 2008' : i['GNI per capita 2008'],
+                'GNI per capita 2010' : i['GNI per capita 2010'],
+                'GNI per capita 2012' : i['GNI per capita 2012'],
+                'GNI per capita 2014' : i['GNI per capita 2014'],
+                'GNI per capita 2016' : i['GNI per capita 2016'],
+                'GNI per capita 2018' : i['GNI per capita 2018'],
+                'GNI per capita 2019' : i['GNI per capita 2019']
                 }
   else:
     output = "No such name"

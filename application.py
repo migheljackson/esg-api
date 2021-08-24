@@ -33,7 +33,29 @@ def get_all_countries():
   #country = db.ESG
   output = []
   for i in country.find():
-    output.append({'name' : i['Country'], 
+    output.append({'name' : i['Country'],
+                'Continent Name' : i['Continent_Name'],
+                '2020' : i["2020"],
+                '2019' : i["2019"],
+                '2018' : i["2018"],
+                '2017' : i["2017"],
+                '2016' : i["2020"],
+                '2015' : i["2015"],
+                '2014' : i["2014"],
+                '2013' : i["2013"],
+                '2012' : i["2012"],
+                '2011' : i["2011"],
+                '2010' : i["2010"],
+                '2009' : i["2009"],
+                '2008' : i["2008"],
+                '2007' : i["2007"],
+                '2006' : i["2006"],
+                '2005' : i["2005"],
+                '2004' : i["2004"],
+                '2003' : i["2003"],
+                '2002' : i["2002"],
+                '2001' : i["2001"],
+                '2000' : i["2000"], 
                 'EPI 2008' : i['EPI 2008'],
                 'CCPI 2008' : i['CCPI 2008'],
                 'EPI 2010' : i['EPI 2010'],
@@ -61,17 +83,52 @@ def get_all_countries():
                 'GNI per capita 2014' : i['GNI per capita 2014'],
                 'GNI per capita 2016' : i['GNI per capita 2016'],
                 'GNI per capita 2018' : i['GNI per capita 2018'],
+                'GNI per capita 2019' : i['GNI per capita 2019'],
+                '2020 Sustainable Competitiveness' : i['2020 Sustainable Competitiveness'],
+                '2019 Sustainable Competitiveness' : i['2019 Sustainable Competitiveness'],
+                '2018 Sustainable Competitiveness' : i['2018 Sustainable Competitiveness'],
+                '2017 Sustainable Competitiveness' : i['2017 Sustainable Competitiveness'],
+                '2016 Sustainable Competitiveness' : i['2016 Sustainable Competitiveness'],
+                '2015 Sustainable Competitiveness' : i['2015 Sustainable Competitiveness'],
+                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness'],
+                'GNI per capita 2010' : i['GNI per capita 2010'],
+                'GNI per capita 2012' : i['GNI per capita 2012'],
+                'GNI per capita 2014' : i['GNI per capita 2014'],
+                'GNI per capita 2016' : i['GNI per capita 2016'],
+                'GNI per capita 2018' : i['GNI per capita 2018'],
                 'GNI per capita 2019' : i['GNI per capita 2019']
                 })
   return jsonify({'result' : output})
 
 
-@app.route('/api/v1.0/country-ESG/<Country>', methods=['GET'])
+@app.route('/api/v1.0/country-ESG?Country=<Country>', methods=['GET'])
 def get_one_country(Country):
   country = db.ESG
   i = country.find_one({'Country' : Country})
   if i:
-    output = {'name' : i['Country'], 
+    output = {'name' : i['Country'],
+                'Continent Name' : i['Continent_Name'],
+                '2020' : i["2020"],
+                '2019' : i["2019"],
+                '2018' : i["2018"],
+                '2017' : i["2017"],
+                '2016' : i["2020"],
+                '2015' : i["2015"],
+                '2014' : i["2014"],
+                '2013' : i["2013"],
+                '2012' : i["2012"],
+                '2011' : i["2011"],
+                '2010' : i["2010"],
+                '2009' : i["2009"],
+                '2008' : i["2008"],
+                '2007' : i["2007"],
+                '2006' : i["2006"],
+                '2005' : i["2005"],
+                '2004' : i["2004"],
+                '2003' : i["2003"],
+                '2002' : i["2002"],
+                '2001' : i["2001"],
+                '2000' : i["2000"], 
                 'EPI 2008' : i['EPI 2008'],
                 'CCPI 2008' : i['CCPI 2008'],
                 'EPI 2010' : i['EPI 2010'],
@@ -94,6 +151,19 @@ def get_one_country(Country):
                 'GDP PER CAPITA 2018' : i['GDP PER CAPITA 2018'],
                 'GDP PER CAPITA 2020' : i['GDP PER CAPITA 2020'],
                 'GNI per capita 2008' : i['GNI per capita 2008'],
+                'GNI per capita 2010' : i['GNI per capita 2010'],
+                'GNI per capita 2012' : i['GNI per capita 2012'],
+                'GNI per capita 2014' : i['GNI per capita 2014'],
+                'GNI per capita 2016' : i['GNI per capita 2016'],
+                'GNI per capita 2018' : i['GNI per capita 2018'],
+                'GNI per capita 2019' : i['GNI per capita 2019'],
+                '2020 Sustainable Competitiveness' : i['2020 Sustainable Competitiveness'],
+                '2019 Sustainable Competitiveness' : i['2019 Sustainable Competitiveness'],
+                '2018 Sustainable Competitiveness' : i['2018 Sustainable Competitiveness'],
+                '2017 Sustainable Competitiveness' : i['2017 Sustainable Competitiveness'],
+                '2016 Sustainable Competitiveness' : i['2016 Sustainable Competitiveness'],
+                '2015 Sustainable Competitiveness' : i['2015 Sustainable Competitiveness'],
+                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness'],
                 'GNI per capita 2010' : i['GNI per capita 2010'],
                 'GNI per capita 2012' : i['GNI per capita 2012'],
                 'GNI per capita 2014' : i['GNI per capita 2014'],
@@ -116,6 +186,12 @@ def findAll():
         output[i].pop('_id')
         i += 1
     return jsonify({'result ':output})
+
+
+# @app.route('/test/', methods=['GET'])
+# def testfind():
+#     for doc in country.find():
+#       return (doc)
 
 
 if __name__ == "__main__":

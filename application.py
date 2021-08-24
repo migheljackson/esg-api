@@ -1,11 +1,12 @@
 from flask import Flask, render_template, jsonify, request
+from flask_cors import CORS
 
 # Import our pymongo library, which lets us connect our Flask app to our Mongo database.
 import pymongo
 
 # Create an instance of our Flask app.
 app = Flask(__name__)
-
+CORS(app)
 # Create connection variable
 conn = 'mongodb+srv://admin:admin@cluster0.5lstl.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-efjkbc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
 

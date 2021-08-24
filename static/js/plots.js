@@ -1,7 +1,7 @@
 const url="https://country-esg-api.herokuapp.com/api/v1.0/country-ESG"
 d3.json(url).then(function(data) {
   var d=data.result
-  console.log("records retrieved:",d.length);
+  console.log("country records retrieved:",d.length);
   var country_data = []
 
   var continent = []

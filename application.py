@@ -103,7 +103,7 @@ def get_one_country(Country):
   i = country.find_one({'Country' : Country})
   if i:
     output = {'name' : i['Country'],
-                'Continent Name' : i['Continent_Name'],
+                'Continent Name' : i['Continent Name'],
                 '2020' : i["2020"],
                 '2019' : i["2019"],
                 '2018' : i["2018"],

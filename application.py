@@ -26,7 +26,7 @@ def index():
     print(countries)
 
     # Return the template with the list passed in
-    return render_template('index.html', countries=countries)
+    return render_template('index copy.html', countries=countries)
 
 @app.route('/api/v1.0/country-ESG', methods=['GET'])
 def get_all_countries():
@@ -101,7 +101,7 @@ def get_all_countries():
   return jsonify({'result' : output})
 
 
-@app.route('/api/v1.0/country-ESG?Country=<Country>', methods=['GET'])
+@app.route('/api/v1.0/country-ESG/<Country>', methods=['GET'])
 def get_one_country(Country):
   country = db.ESG
   i = country.find_one({'Country' : Country})

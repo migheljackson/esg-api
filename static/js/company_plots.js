@@ -1,7 +1,7 @@
 const compurl="https://country-esg-api.herokuapp.com/api/v1.0/company-ESG"
 d3.json(compurl).then(function(data) {
   var c=data.result
-  console.log("records retrieved:",d.length);
+  console.log("records retrieved:",c.length);
 
 var company_array = []
 

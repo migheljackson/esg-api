@@ -1,6 +1,6 @@
-const url="https://country-esg-api.herokuapp.com/api/v1.0/company-ESG"
-d3.json(url).then(function(data) {
-  var d=data.result
+const compurl="https://country-esg-api.herokuapp.com/api/v1.0/company-ESG"
+d3.json(compurl).then(function(data) {
+  var c=data.result
   console.log("records retrieved:",d.length);
 
 var company_array = []
@@ -36,40 +36,40 @@ var commitments_2018 = []
 var commitments_2019 = []
 var commitments_2020 = []
 
-for (var i = 0; i < d.length; i++) {
+for (var i = 0; i < c.length; i++) {
 
-company_array[i] = d[i]["company"];
+company_array[i] = c[i]["company"];
 
-msci_2016[i] = d[i]["MSCI ESG Rating 2016"];
-msci_2017[i] = d[i]["MSCI ESG Rating 2017"];
-msci_2018[i] = d[i]["MSCI ESG Rating 2018"];
-msci_2019[i] = d[i]["MSCI ESG Rating 2019"];
-msci_2020[i] = d[i]["MSCI ESG Rating 2020"];
-msci_2021[i] = d[i]["MSCI ESG Rating 2021"];
+msci_2016[i] = c[i]["MSCI ESG Rating 2016"];
+msci_2017[i] = c[i]["MSCI ESG Rating 2017"];
+msci_2018[i] = c[i]["MSCI ESG Rating 2018"];
+msci_2019[i] = c[i]["MSCI ESG Rating 2019"];
+msci_2020[i] = c[i]["MSCI ESG Rating 2020"];
+msci_2021[i] = c[i]["MSCI ESG Rating 2021"];
 
-votes_2010[i] = d[i]["2010 Votes"];
-votes_2011[i] = d[i]["2011 Votes"];
-votes_2012[i] = d[i]["2012 Votes"];
-votes_2013[i] = d[i]["2013 Votes"];
-votes_2014[i] = d[i]["2014 Votes"];
-votes_2015[i] = d[i]["2015 Votes"];
-votes_2016[i] = d[i]["2016 Votes"];
-votes_2017[i] = d[i]["2017 Votes"];
-votes_2018[i] = d[i]["2018 Votes"];
-votes_2019[i] = d[i]["2019 Votes"];
-votes_2020[i] = d[i]["2020 Votes"];
+votes_2010[i] = c[i]["2010 Votes"];
+votes_2011[i] = c[i]["2011 Votes"];
+votes_2012[i] = c[i]["2012 Votes"];
+votes_2013[i] = c[i]["2013 Votes"];
+votes_2014[i] = c[i]["2014 Votes"];
+votes_2015[i] = c[i]["2015 Votes"];
+votes_2016[i] = c[i]["2016 Votes"];
+votes_2017[i] = c[i]["2017 Votes"];
+votes_2018[i] = c[i]["2018 Votes"];
+votes_2019[i] = c[i]["2019 Votes"];
+votes_2020[i] = c[i]["2020 Votes"];
 
-commitments_2010[i] = d[i]["2010 Commitments"];
-commitments_2011[i] = d[i]["2011 Commitments"];
-commitments_2012[i] = d[i]["2012 Commitments"];
-commitments_2013[i] = d[i]["2013 Commitments"];
-commitments_2014[i] = d[i]["2014 Commitments"];
-commitments_2015[i] = d[i]["2015 Commitments"];
-commitments_2016[i] = d[i]["2016 Commitments"];
-commitments_2017[i] = d[i]["2017 Commitments"];
-commitments_2018[i] = d[i]["2018 Commitments"];
-commitments_2019[i] = d[i]["2019 Commitments"];
-commitments_2020[i] = d[i]["2020 Commitments"];
+commitments_2010[i] = c[i]["2010 Commitments"];
+commitments_2011[i] = c[i]["2011 Commitments"];
+commitments_2012[i] = c[i]["2012 Commitments"];
+commitments_2013[i] = c[i]["2013 Commitments"];
+commitments_2014[i] = c[i]["2014 Commitments"];
+commitments_2015[i] = c[i]["2015 Commitments"];
+commitments_2016[i] = c[i]["2016 Commitments"];
+commitments_2017[i] = c[i]["2017 Commitments"];
+commitments_2018[i] = c[i]["2018 Commitments"];
+commitments_2019[i] = c[i]["2019 Commitments"];
+commitments_2020[i] = c[i]["2020 Commitments"];
 
 }
 

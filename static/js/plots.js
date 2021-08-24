@@ -1,4 +1,4 @@
-const url="http://country-esg-api.herokuapp.com/api/v1.0/country-ESG"
+const url="https://country-esg-api.herokuapp.com/api/v1.0/country-ESG"
 d3.json(url).then(function(data) {
   var d=data.result
   console.log("records retrieved:",d.length);
@@ -259,8 +259,8 @@ d3.json(url).then(function(data) {
               size: 40
             }
           },
-          height: 1800,
-          width: 1800,
+          // height: 1800,
+          // width: 1800,
           xaxis: {
             title: {
               text: 'EPI Rating',
@@ -308,8 +308,8 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2020 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              // height: 1800,
+              // width: 1800,
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -340,8 +340,8 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2018 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              // height: 1800,
+              // width: 1800,
               xaxis: {
                 title: {
                   text: 'EPI Rating',

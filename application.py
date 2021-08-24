@@ -27,7 +27,7 @@ def index():
 
     # Return the template with the list passed in
     #return render_template('index copy.html', countries=countries)
-    return render_template('index copy.html')
+    return render_template('index.html')
 
 @app.route('/api/v1.0/country-ESG', methods=['GET'])
 def get_all_countries():

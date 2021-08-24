@@ -201,9 +201,9 @@ d3.json(url).then(function(data) {
       country_pop_2000[i] = (d[i]["2000"]) / 7000000;
 
 
-      console.log(d[i]["Continent_Name"]);
+      console.log(d[i]["Continent Name"]);
 
-      continent[i] = d[i]["Continent_Name"];
+      continent[i] = d[i]["Continent Name"];
 
       gni_2019[i] = d[i]["GNI per capita 2019"];
       gni_2018[i] = d[i]["GNI per capita 2018"];

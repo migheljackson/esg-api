@@ -176,7 +176,7 @@ def get_all_companies():
   output = []
   for i in company.find():
     output.append({"name" : i["company"],
-                'ticker' : i["ticker"]
+                'ticker' : i["ticker"],
                 'MSCI ESG Rating 2016' : i["MSCI ESG Rating 2016"],
                 'MSCI ESG Rating 2017' : i["MSCI ESG Rating 2017"],
                 'MSCI ESG Rating 2018' : i["MSCI ESG Rating 2018"],

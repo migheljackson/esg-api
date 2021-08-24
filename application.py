@@ -17,6 +17,7 @@ client = pymongo.MongoClient(conn)
 db = client.International_ESG_df
 
 country = db.ESG
+company = db.CompanyESG
 
 # Set route
 @app.route('/')
@@ -91,13 +92,7 @@ def get_all_countries():
                 '2017 Sustainable Competitiveness' : i['2017 Sustainable Competitiveness'],
                 '2016 Sustainable Competitiveness' : i['2016 Sustainable Competitiveness'],
                 '2015 Sustainable Competitiveness' : i['2015 Sustainable Competitiveness'],
-                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness'],
-                'GNI per capita 2010' : i['GNI per capita 2010'],
-                'GNI per capita 2012' : i['GNI per capita 2012'],
-                'GNI per capita 2014' : i['GNI per capita 2014'],
-                'GNI per capita 2016' : i['GNI per capita 2016'],
-                'GNI per capita 2018' : i['GNI per capita 2018'],
-                'GNI per capita 2019' : i['GNI per capita 2019']
+                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness']
                 })
   return jsonify({'result' : output})
 
@@ -176,6 +171,42 @@ def get_one_country(Country):
     output = "No such name"
   return jsonify({'result' : output})
 
+@app.route('/api/v1.0/company-ESG', methods=['GET'])
+def get_all_companies():
+  output = []
+  for i in company.find():
+    output.append({"name" : i["company"],
+                'ticker' : i["ticker"]
+                'MSCI ESG Rating 2016' : i["MSCI ESG Rating 2016"],
+                'MSCI ESG Rating 2017' : i["MSCI ESG Rating 2017"],
+                'MSCI ESG Rating 2018' : i["MSCI ESG Rating 2018"],
+                'MSCI ESG Rating 2019' : i["MSCI ESG Rating 2019"],
+                'MSCI ESG Rating 2020' : i["MSCI ESG Rating 2020"],
+                'MSCI ESG Rating 2021' : i["MSCI ESG Rating 2021"],
+                '2010 Votes' : i["2010 Votes"],
+                '2011 Votes' : i["2011 Votes"],
+                '2012 Votes' : i["2012 Votes"],
+                '2013 Votes' : i["2013 Votes"],
+                '2014 Votes' : i["2014 Votes"],
+                '2015 Votes' : i["2015 Votes"],
+                '2016 Votes' : i["2016 Votes"],
+                '2017 Votes' : i["2017 Votes"],
+                '2018 Votes' : i["2018 Votes"],
+                '2019 Votes' : i["2019 Votes"],
+                '2020 Votes' : i["2020 Votes"],
+                '2010 Commitments' : i["2010 Commitments"],
+                '2011 Commitments' : i["2011 Commitments"],
+                '2012 Commitments' : i["2012 Commitments"],
+                '2013 Commitments' : i["2013 Commitments"],
+                '2014 Commitments' : i["2014 Commitments"],
+                '2015 Commitments' : i["2015 Commitments"],
+                '2016 Commitments' : i["2016 Commitments"],
+                '2017 Commitments' : i["2017 Commitments"],
+                '2018 Commitments' : i["2018 Commitments"],
+                '2019 Commitments' : i["2019 Commitments"],
+                '2020 Commitments' : i["2020 Commitments"]
+                })
+  return jsonify({'result' : output})
 
 @app.route('/find/', methods=['GET'])
 def findAll():

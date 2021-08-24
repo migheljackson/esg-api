@@ -39,7 +39,7 @@
 </select>
 <body>
   <div id="plot"></div> 
-  <img src="assets/country_graph_key.png" alt="country graph key" width = "700" height = "600">
+  <img src="static/assets/country_graph_key.png" alt="country graph key" width = "700" height = "600">
 
 
   <div id="companyplot"></div> 
@@ -50,8 +50,7 @@
 
   
 
-  <script src="assets/company_plots.js"></script>
-  <script src="assets/plots.js"></script>
+  <script src="{{ url_for('static', filename='js/company_plots.js') }}"></script>
   <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
 </body>
 </html>

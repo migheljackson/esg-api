@@ -373,8 +373,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2016 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -407,8 +406,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2014 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -441,8 +439,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2012 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -475,8 +472,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2010 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -509,8 +505,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2008 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -543,8 +538,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2006 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -577,8 +571,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2004 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -611,8 +604,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2002 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -644,8 +636,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2000 GDP Per Capita vs. EPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'EPI Rating',
@@ -677,8 +668,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2020 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -711,8 +701,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2018 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -744,8 +733,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2016 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -778,8 +766,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2014 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -812,8 +799,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2012 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -846,8 +832,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2010 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -879,8 +864,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2008 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -913,8 +897,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2006 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'CCPI Rating',
@@ -947,8 +930,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2019 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',
@@ -981,8 +963,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2018 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',
@@ -1015,8 +996,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2017 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',
@@ -1048,8 +1028,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2016 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',
@@ -1081,8 +1060,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2015 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',
@@ -1114,8 +1092,7 @@ d3.json(url).then(function(data) {
             layout = { 
               title: '2014 GDP Per Capita vs. Sustainable Competitiveness Rating',
               showlegend: false,
-              height: 1800,
-              width: 1800,
+              
               xaxis: {
                 title: {
                   text: 'Sustainable Competitiveness Rating',

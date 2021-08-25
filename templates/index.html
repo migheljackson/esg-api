@@ -1,56 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GDP per Capita vs. EPI</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+
+<body>
+
+  <div class="container">
+    <!-- START OF NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ESG Project Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="esgdd.html">Data Dictionary</a>
+              </div>
+          </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>The Environmental, Social, Governance (ESG) Goldrush:<br><br>Too little, too late, too ineffective</h1>
+        <p>Explore the country and company-level analysis of whether ESG investors and actions by their asset managers have made a noticeable impact on country or company ESG performance</p>
+        <img src="static/assets/Hell heaven.PNG">
+    </div>
+      <dl>
+     <h2><dt>What is ESG?</dt></h2>
+      </dl>
+      <img src="static/assets/ESG nutshell from Vanguard.png">
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2><dt>The Siren Song of ESG<dt></h2>
+          <!-- start of Marquee -->
+          <marquee scrollamount = "5" bgcolor= "cyan" direction = "up">
+            <p><h3>"Invest today.  Change tomorrow....Invest for a better future." (Aberdeen Standard Investments)</p>
+              <p>"Responsible investing drives better outcomes for...our communities and the planet." (Nuveen)</p>
+              <p>"...we are helping our investors meet their sustainability objectives in a way that only active management can." (PGIM/Prudential Financial)</p>
+              <p>"...in pursuit of a better world...improving long-term societal outcomes." (Calvert)</p>
+              <p>"...you can seek to generate measurable sustainable outcomes" (iShares by BlackRock)
+              <p> "ESG investing is an essential part of the solution to a sustainable future." (Invesco)</p>
+              <p>"We have the power to help create a sustainable and more prosperous world for all..."(Schroders)</p>
+              <p>"...incorporating ESG research...improves both investment and societal outcomes." (Parnassus)</p>
+              <p>"helping the world’s investors achieve better outcomes for the people they serve by incorporating ESG value drivers ...working to build a more resilient and inclusive future" (State Street)</p>
+              <p>"AQR ...employ(s) sustainable themes that may...achieve a specific ESG objective."</h3></p>
+
+            </marquee>
+          <!-- End of Marquee -->
+
+      </div>
+    </div>
+    <dl></dl>
+
+    <h2><dt>Country Environment/ESG Scores Increase by Wealth, not Investor Action</dt></h2></dl>
+    <div class="plots">
+      <!-- <div class="plots__plot"></div> -->
+      <select id="selDataset">
+      <option value="dataset1">2020 EPI</option>
+      <option value="dataset2">2018 EPI</option>
+      <option value="dataset3">2016 EPI</option>
+      <option value="dataset4">2014 EPI</option>
+      <option value="dataset5">2012 EPI</option>
+      <option value="dataset6">2010 EPI</option>
+      <option value="dataset7">2008 EPI</option>
+      <option value="dataset8">2006 EPI</option>
+      <option value="dataset9">2004 EPI</option>
+      <option value="dataset10">2002 EPI</option>
+      <option value="dataset11">2000 EPI</option>
+      <option value="dataset12">2020 CCPI</option>
+      <option value="dataset13">2018 CCPI</option>
+      <option value="dataset14">2016 CCPI</option>
+      <option value="dataset15">2014 CCPI</option>
+      <option value="dataset16">2012 CCPI</option>
+      <option value="dataset17">2010 CCPI</option>
+      <option value="dataset18">2008 CCPI</option>
+      <option value="dataset19">2020 Sustainable Competitiveness</option>
+      <option value="dataset20">2019 Sustainable Competitiveness</option>
+      <option value="dataset21">2018 Sustainable Competitiveness</option>
+      <option value="dataset22">2017 Sustainable Competitiveness</option>
+      <option value="dataset23">2016 Sustainable Competitiveness</option>
+      <option value="dataset24">2015 Sustainable Competitiveness</option>
+      <option value="dataset25">2014 Sustainable Competitiveness</option>
+      </select>
+    
+        <div id="plot"></div>
+        <img src="static/assets/country_graph_key.png" alt="country graph key" width = "700" height = "600">
+    
+      <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
+    </div>
+    <section class="w3-container">
+      <p><h3><blockquote><b>EPI concludes:"...good policy results are associated with wealth (GDP per capita), meaning that economic prosperity makes it possible for nations to
+      invest in policies and programs that lead to desirable outcomes...</b><br><br>
+
+      Second, the pursuit of economic prosperity – manifested in industrialization and urbanization – often means more pollution and other strains on
+      ecosystem vitality, especially in the developing world, where air and water emissions remain significant. But at the same time, the data suggest countries
+      need not sacrifice sustainability for economic security or vice versa."</h3></blockquote></p>
+      <p><h3><blockquote>CCPI:"...it is important to note that more than half of the CCPI ranking indicators are qualified in relative terms (better/worse) rather than absolute.
+      <b>Therefore even those countries with high rankings have no reason to sit back and relax. On the contrary, the results illustrate that even if all countries were as committed as
+      the current frontrunners, efforts would still not be sufficient to prevent dangerous climate change...Even the goals of net
+      zero by 2050 or 2060 from Asia are insufficient for a 1.5°C world."</b></h3></blockquote><p>
+      <p><blockquote><h3>GSCI: "Sustainable competitiveness means that current wealth levels are not in danger of being reduced or diminished through over-exploitation of resources (i.e.
+        natural and human resources), the lack of innovation investments required to compete in the globalised markets (i.e. education), or the discrimination,
+        marginalisation or exploitation of segments of a society.<br><br>
+        The leading nations on the GSCI ranking are mostly high-income countries, suggesting a certain <b>correlation between Sustainable Competitiveness score and GDP
+        per capita, or income levels (high income = high sustainability).</b>The same is true when visualizing average deviations of GDP per capita and the sustainable
+        competitiveness score.<br><br>
+        ... Resource economies (e.g. Saudi Arabia, Kuwait) are ranked significantly below
+        their GDP ranks. This indicates that the correlation is not from GDP to sustainable competitiveness, but rather from sustainable competitiveness to income levels. In
+        other words: <b>higher sustainable competitiveness can be associated with higher income levels."</b></h3></blockquote></p>
+      </section>
+    </dl>
+    <h2><dt>Corporate ESG Scores Increase with or without Investor ESG Actions</dt></h2>
+    <dl>
+<p><blockquote><h3>"Currently, the <b>(Corporate ESG) ratings are inconsistent and incomplete,</b>an indication of the work that lies ahead. A Wall Street Journal analysis of ESG grades issued for nearly 1,500 companies by three rating firms found that nearly two-thirds—942 companies—got different grades from different raters. The Journal collected ratings from the websites of three prominent ratings firms in May—Refinitiv Holdings Ltd., MSCI Inc. and Sustainalytics—and identified 1,469 companies scored by all three.  <b>Nearly a third of the companies were deemed ESG leaders by one or more rating firms, but labeled ESG laggards by one or another rater.</b> Credit ratings, by contrast, are broadly consistent." (WSJ, August 10, 2021)</h3></blockquote></h3>
+<br/>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dsx2vdn7gpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </iframe>
+        </div>
+      <div class="plots">
+      
+        <select id="selCompany">
+        <option value="set1">2020 EPI</option>
+        </select>
+          <div id="companyplot"></div>
+        <script src="{{ url_for('static', filename='js/company_plots.js') }}"></script>
+      </div>
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
-
-</head>
-
-<select id="selDataset">
-  <option value="dataset1">2020 EPI</option>
-  <option value="dataset2">2018 EPI</option>
-  <option value="dataset3">2016 EPI</option>
-  <option value="dataset4">2014 EPI</option>
-  <option value="dataset5">2012 EPI</option>
-  <option value="dataset6">2010 EPI</option>
-  <option value="dataset7">2008 EPI</option>
-  <option value="dataset8">2006 EPI</option>
-  <option value="dataset9">2004 EPI</option>
-  <option value="dataset10">2002 EPI</option>
-  <option value="dataset11">2000 EPI</option>
-  <option value="dataset12">2020 CCPI</option>
-  <option value="dataset13">2018 CCPI</option>
-  <option value="dataset14">2016 CCPI</option>
-  <option value="dataset15">2014 CCPI</option>
-  <option value="dataset16">2012 CCPI</option>
-  <option value="dataset17">2010 CCPI</option>
-  <option value="dataset18">2008 CCPI</option>
-  <option value="dataset19">2020 Sustainable Competitiveness</option>
-  <option value="dataset20">2019 Sustainable Competitiveness</option>
-  <option value="dataset21">2018 Sustainable Competitiveness</option>
-  <option value="dataset22">2017 Sustainable Competitiveness</option>
-  <option value="dataset23">2016 Sustainable Competitiveness</option>
-  <option value="dataset24">2015 Sustainable Competitiveness</option>
-  <option value="dataset25">2014 Sustainable Competitiveness</option>
-</select>
-<body>
-  <div id="plot"></div> 
-  <img src="static/assets/country_graph_key.png" alt="country graph key" width = "700" height = "600">
-
-
-  <div id="companyplot"></div> 
-
-  <select id="selCompany">
-    <option value="set1">2020 EPI</option>
-  </select>
-
-  
-
-  <script src="{{ url_for('static', filename='js/company_plots.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
 </body>
+
 </html>

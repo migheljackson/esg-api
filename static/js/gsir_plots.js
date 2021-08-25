@@ -25,19 +25,40 @@ d3.json(gsir_url).then(function(gsirdata) {
             
         var trace1 = {
             x: gsia_region,
-            y: esg_tot_2020,
-            name: 'Total ESG 2020',
+            y: esg_tot_2012,
+            name: 'Total ESG 2012',
             type: 'bar'
             };
               
         var trace2 = {
             x: gsia_region,
+            y: esg_tot_2014,
+            name: 'Total ESG 2014',
+            type: 'bar'
+            };
+
+        var trace3 = {
+            x: gsia_region,
+            y: esg_tot_2016,
+            name: 'Total ESG 2016',
+            type: 'bar'
+            };
+            
+        var trace4 = {
+            x: gsia_region,
             y: esg_tot_2018,
             name: 'Total ESG 2018',
             type: 'bar'
             };
+
+        var trace5 = {
+            x: gsia_region,
+            y: esg_tot_2020,
+            name: 'Total ESG 2020',
+            type: 'bar'
+            };
               
-        var plotdata = [trace1, trace2];
+        var plotdata = [trace1, trace2, trace3, trace4, trace5];
               
         var layout = {barmode: 'group'};
               

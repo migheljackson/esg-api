@@ -150,8 +150,6 @@ var layout = {
       size: 40
     }
   },
-  height: 1800,
-  width: 1800,
   xaxis: {
     title: {
       text: 'Company Votes',

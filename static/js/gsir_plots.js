@@ -13,12 +13,12 @@ d3.json(gsir_url).then(function(gsirdata) {
   
         
     for (var i = 0; i < g.length; i++) {
-            esg_tot_2020[i] = g[i]["esg_tot_2020"];
-            esg_tot_2018[i] = g[i]["esg_tot_2018"];
-            esg_tot_2016[i] = g[i]["esg_tot_2016"];
-            esg_tot_2014[i] = g[i]["esg_tot_2014"];
-            esg_tot_2012[i] = g[i]["esg_tot_2012"];
-            gsia_region[i] = g[i]["gsia_region"];
+            esg_tot_2020[i] = g[i]["Total ESG Investing 2020"];
+            esg_tot_2018[i] = g[i]["Total ESG Investing 2018"];
+            esg_tot_2016[i] = g[i]["Total ESG Investing 2016"];
+            esg_tot_2014[i] = g[i]["Total ESG Investing 2014"];
+            esg_tot_2012[i] = g[i]["Total ESG Investing 2012"];
+            gsia_region[i] = g[i]["GSIA Region"];
         }
         console.log(gsia_region);
         console.log(esg_tot_2020);

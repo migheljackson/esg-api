@@ -2,7 +2,7 @@ const gsir_url="https://country-esg-api.herokuapp.com/api/v1.0/gsir-ESG"
 d3.json(gsir_url).then(function(gsirdata) {
     var g=gsirdata.result
     console.log("gsir records retrieved:",g.length);
-    console.log(gsirdata);
+    console.log(g);
 
     var gsia_region = []
     var esg_tot_2020 = []

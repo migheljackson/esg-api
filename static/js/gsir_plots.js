@@ -26,35 +26,35 @@ d3.json(gsir_url).then(function(gsirdata) {
         var trace1 = {
             x: gsia_region,
             y: esg_tot_2012,
-            name: 'Total ESG 2012',
+            name: 'Total ESG Assets 2012',
             type: 'bar'
             };
               
         var trace2 = {
             x: gsia_region,
             y: esg_tot_2014,
-            name: 'Total ESG 2014',
+            name: 'Total ESG Assets 2014',
             type: 'bar'
             };
 
         var trace3 = {
             x: gsia_region,
             y: esg_tot_2016,
-            name: 'Total ESG 2016',
+            name: 'Total ESG Assets 2016',
             type: 'bar'
             };
             
         var trace4 = {
             x: gsia_region,
             y: esg_tot_2018,
-            name: 'Total ESG 2018',
+            name: 'Total ESG Assets 2018',
             type: 'bar'
             };
 
         var trace5 = {
             x: gsia_region,
             y: esg_tot_2020,
-            name: 'Total ESG 2020',
+            name: 'Total ESG Assets 2020',
             type: 'bar'
             };
               
@@ -62,14 +62,34 @@ d3.json(gsir_url).then(function(gsirdata) {
               
         var layout = {barmode: 'group',
         title: {
-            text:'Total ESG Investment by Year, Region',
+            text:'Total ESG Investment By Year,Region',
             font: {
               family: 'Courier New, monospace',
-              size: 24
+              size: 20
             },
             xref: 'paper',
             x: 0.05,
           },
+          xaxis: {
+            title: {
+              text: 'GSIA Region',
+              font: {
+                family: 'Courier New, monospace',
+                size: 14,
+                color: '#7f7f7f'
+              }
+            },
+          },
+          yaxis: {
+            title: {
+              text: 'Total ESG Assets In Billions',
+              font: {
+                family: 'Courier New, monospace',
+                size: 14,
+                color: '#7f7f7f'
+              }
+            }
+          }
 
                     };
               

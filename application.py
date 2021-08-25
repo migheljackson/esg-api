@@ -36,6 +36,7 @@ def get_all_countries():
   for i in country.find():
     output.append({'name' : i['Country'],
                 'Continent Name' : i['Continent_Name'],
+                'GSIA Region' : i['gsia_region'],
                 '2020' : i["2020"],
                 '2019' : i["2019"],
                 '2018' : i["2018"],
@@ -128,7 +129,12 @@ def get_all_countries():
                 '2017 Sustainable Competitiveness' : i['2017 Sustainable Competitiveness'],
                 '2016 Sustainable Competitiveness' : i['2016 Sustainable Competitiveness'],
                 '2015 Sustainable Competitiveness' : i['2015 Sustainable Competitiveness'],
-                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness']
+                '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness'],
+                'Total ESG Investing 2020' : i['esg_tot_2020'],
+                'Total ESG Investing 2018' : i['esg_tot_2018'],
+                'Total ESG Investing 2016' : i['esg_tot_2016'],
+                'Total ESG Investing 2014' : i['esg_tot_2014'],
+                'Total ESG Investing 2012' : i['esg_tot_2012'] 
                 })
   return jsonify({'result' : output})
 
@@ -244,6 +250,21 @@ def get_all_companies():
                 })
   return jsonify({'result' : output})
 
+
+@app.route('/api/v1.0/gsir-ESG', methods=['GET'])
+def get_all_gsir():
+  output = []
+  for i in gsia_region.find():
+    output.append({"GSIA Region" : i["gsia_region"],
+                'Total ESG Investing 2020' : i["esg_tot_2020"],
+                'Total ESG Investing 2018' : i["esg_tot_2018"],
+                'Total ESG Investing 2016' : i["esg_tot_2016"],
+                'Total ESG Investing 2014' : i["esg_tot_2014"],
+                'Total ESG Investing 2012' : i["esg_tot_2012"]
+                })
+  return jsonify({'result' : output})
+
+
 @app.route('/find/', methods=['GET'])
 def findAll():
     query = country.find()
@@ -256,10 +277,9 @@ def findAll():
     return jsonify({'result ':output})
 
 
-# @app.route('/test/', methods=['GET'])
-# def testfind():
-#     for doc in country.find():
-#       return (doc)
+@app.route('/test/')
+def testplot():
+    return render_template('test.html')
 
 
 if __name__ == "__main__":

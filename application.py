@@ -18,6 +18,7 @@ db = client.International_ESG_df
 
 country = db.ESG
 company = db.CompanyESG
+gsir = db.GSIR
 
 # Set route
 @app.route('/')
@@ -254,7 +255,8 @@ def get_all_companies():
 @app.route('/api/v1.0/gsir-ESG', methods=['GET'])
 def get_all_gsir():
   output = []
-  for i in gsia_region.find():
+  
+  for i in gsir.find():
     output.append({"GSIA Region" : i["gsia_region"],
                 'Total ESG Investing 2020' : i["esg_tot_2020"],
                 'Total ESG Investing 2018' : i["esg_tot_2018"],

@@ -83,7 +83,7 @@ d3.json(gsir_url).then(function(gsirdata) {
           },
           yaxis: {
             title: {
-              text: 'Total ESG Assets In Billions',
+              text: 'Total ESG Assets In Billions($)',
               font: {
                 family: 'Courier New, monospace',
                 size: 16,

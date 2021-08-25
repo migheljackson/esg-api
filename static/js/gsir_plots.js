@@ -60,7 +60,18 @@ d3.json(gsir_url).then(function(gsirdata) {
               
         var plotdata = [trace1, trace2, trace3, trace4, trace5];
               
-        var layout = {barmode: 'group'};
+        var layout = {barmode: 'group',
+        title: {
+            text:'Total ESG Investment by Year, Region',
+            font: {
+              family: 'Courier New, monospace',
+              size: 24
+            },
+            xref: 'paper',
+            x: 0.05,
+          },
+
+                    };
               
         Plotly.newPlot('gsir_plot', plotdata, layout);
   

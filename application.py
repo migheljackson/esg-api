@@ -22,13 +22,13 @@ company = db.CompanyESG
 # Set route
 @app.route('/')
 def index():
-    # Store the entire collection in a list
-    countries = list(db.ESG.find())
-    print(countries)
-
-    # Return the template with the list passed in
-    #return render_template('index copy.html', countries=countries)
     return render_template('index.html')
+
+
+@app.route('/dictionary/')
+def dictionary():
+    return render_template('esgdd.html')
+    
 
 @app.route('/api/v1.0/country-ESG', methods=['GET'])
 def get_all_countries():

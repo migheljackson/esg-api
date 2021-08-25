@@ -256,7 +256,7 @@ d3.json(url).then(function(data) {
             text:'2020 GDP Per Capita vs. EPI Rating',
             font: {
               family: 'Courier New, monospace',
-              size: 40
+              size: 20
             }
           },
           // height: 1800,

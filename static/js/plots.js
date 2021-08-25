@@ -266,7 +266,7 @@ d3.json(url).then(function(data) {
               text: 'EPI Rating',
               font: {
                 family: 'Courier New, monospace',
-                size: 30,
+                size: 20,
                 color: '#7f7f7f'
               }
             },
@@ -276,7 +276,7 @@ d3.json(url).then(function(data) {
               text: 'GDP Per Capita',
               font: {
                 family: 'Courier New, monospace',
-                size: 30,
+                size: 20,
                 color: '#7f7f7f'
               }
             }
@@ -315,7 +315,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -325,7 +325,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -347,7 +347,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -357,7 +357,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -379,7 +379,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -389,7 +389,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -412,7 +412,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -422,7 +422,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -445,7 +445,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -455,7 +455,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -478,7 +478,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -488,7 +488,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -511,7 +511,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -521,7 +521,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -544,7 +544,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -554,7 +554,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -577,7 +577,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -587,7 +587,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -610,7 +610,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -620,7 +620,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -642,7 +642,7 @@ d3.json(url).then(function(data) {
                   text: 'EPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -652,7 +652,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -674,7 +674,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -684,7 +684,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -707,7 +707,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -717,7 +717,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -739,7 +739,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -749,7 +749,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -772,7 +772,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -782,7 +782,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -805,7 +805,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -815,7 +815,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -838,7 +838,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -848,7 +848,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -870,7 +870,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -880,7 +880,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -903,7 +903,7 @@ d3.json(url).then(function(data) {
                   text: 'CCPI Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -913,7 +913,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -936,7 +936,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -946,7 +946,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -969,7 +969,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -979,7 +979,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -1002,7 +1002,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -1012,7 +1012,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -1034,7 +1034,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -1044,7 +1044,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -1066,7 +1066,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -1076,7 +1076,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }
@@ -1098,7 +1098,7 @@ d3.json(url).then(function(data) {
                   text: 'Sustainable Competitiveness Rating',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 },
@@ -1108,7 +1108,7 @@ d3.json(url).then(function(data) {
                   text: 'GDP Per Capita',
                   font: {
                     family: 'Courier New, monospace',
-                    size: 30,
+                    size: 20,
                     color: '#7f7f7f'
                   }
                 }

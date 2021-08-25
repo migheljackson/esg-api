@@ -76,7 +76,7 @@ d3.json(gsir_url).then(function(gsirdata) {
               text: 'GSIA Region',
               font: {
                 family: 'Courier New, monospace',
-                size: 14,
+                size: 16,
                 color: '#7f7f7f'
               }
             },
@@ -86,7 +86,7 @@ d3.json(gsir_url).then(function(gsirdata) {
               text: 'Total ESG Assets In Billions',
               font: {
                 family: 'Courier New, monospace',
-                size: 14,
+                size: 16,
                 color: '#7f7f7f'
               }
             }

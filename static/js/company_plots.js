@@ -147,7 +147,7 @@ var layout = {
     text:'MSCI ESG Rating vs. Company Votes and Commitments',
     font: {
       family: 'Courier New, monospace',
-      size: 40
+      size: 20
     }
   },
   xaxis: {
@@ -155,7 +155,7 @@ var layout = {
       text: 'Company Votes',
       font: {
         family: 'Courier New, monospace',
-        size: 30,
+        size: 20,
         color: '#7f7f7f'
       }
     },
@@ -165,7 +165,7 @@ var layout = {
       text: 'MSCI Rating',
       font: {
         family: 'Courier New, monospace',
-        size: 30,
+        size: 20,
         color: '#7f7f7f'
       }
     }

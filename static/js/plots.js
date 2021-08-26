@@ -895,7 +895,7 @@ d3.json(url).then(function(data) {
             y = gdp_per_cap_2020;
             //size = country_pop_2020;
             layout = { 
-              title: '2006 GDP Per Capita vs. CCPI Rating',
+              title: '2020 GDP Per Capita vs. CCPI Rating',
               showlegend: false,
               
               xaxis: {

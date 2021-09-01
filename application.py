@@ -27,19 +27,19 @@ def index():
 
 
 @app.route('/dictionary/')
-def dictionary():
+def dictionary_page():
     return render_template('esgdd.html')
 
 @app.route('/country/')
-def dictionary():
+def country_page():
     return render_template('country.html')
 
 @app.route('/company/')
-def dictionary():
+def company_page():
     return render_template('company.html')
 
 @app.route('/conclusion/')
-def dictionary():
+def conclusion_page():
     return render_template('conclusion.html')
     
 

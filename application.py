@@ -29,6 +29,18 @@ def index():
 @app.route('/dictionary/')
 def dictionary():
     return render_template('esgdd.html')
+
+@app.route('/country/')
+def dictionary():
+    return render_template('country.html')
+
+@app.route('/company/')
+def dictionary():
+    return render_template('company.html')
+
+@app.route('/conclusion/')
+def dictionary():
+    return render_template('conclusion.html')
     
 
 @app.route('/api/v1.0/country-ESG', methods=['GET'])

@@ -30,6 +30,9 @@
               Dropdown
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/country/">Country ESG Ratings/Analysis</a>
+              <a class="dropdown-item" href="/company/">Corporate ESG Ratings/Analysis</a>
+              <a class="dropdown-item" href="/conclusion/">Conclusion: ESG is too little, too late, too ineffective</a>
               <a class="dropdown-item" href="/dictionary/">Data Dictionary</a>
               </div>
           </li>
@@ -42,7 +45,7 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>The Environmental, Social, Governance (ESG) Goldrush:<br><br>Too little, too late, too ineffective</h1>
-        <p>Explore the country and company-level analysis of whether ESG investors and actions by their asset managers have made a noticeable impact on country or company ESG performance</p>
+        <p>On this and the following pages, explore the country and company-level analysis of whether ESG investors and actions by their asset managers have made a noticeable impact on country or company ESG performance</p>
         <img src="static/assets/Hell heaven.PNG">
     </div>
       <dl>
@@ -55,254 +58,41 @@
       <div class="col-md-12">
         <h2><dt>The Siren Song of ESG<dt></h2>
           <!-- start of Marquee -->
-          <marquee scrollamount = "5" bgcolor= "cyan" direction = "up">
-            <p><h3>"Invest today.  Change tomorrow....Invest for a better future." (Aberdeen Standard Investments)</p>
-              <p>"Responsible investing drives better outcomes for...our communities and the planet." (Nuveen)</p>
-              <p>"...we are helping our investors meet their sustainability objectives in a way that only active management can." (PGIM/Prudential Financial)</p>
-              <p>"...in pursuit of a better world...improving long-term societal outcomes." (Calvert)</p>
-              <p>"...you can seek to generate measurable sustainable outcomes" (iShares by BlackRock)
-              <p> "ESG investing is an essential part of the solution to a sustainable future." (Invesco)</p>
-              <p>"We have the power to help create a sustainable and more prosperous world for all..."(Schroders)</p>
-              <p>"...incorporating ESG research...improves both investment and societal outcomes." (Parnassus)</p>
-              <p>"helping the world’s investors achieve better outcomes for the people they serve by incorporating ESG value drivers ...working to build a more resilient and inclusive future" (State Street)</p>
-              <p>"AQR ...employ(s) sustainable themes that may...achieve a specific ESG objective."</h3></p>
+          <marquee scrollamount = "10" bgcolor= "cyan" direction = "up" height = "50%">
+            <p><h3>"Invest today.  Change tomorrow....Invest for a better future."</p><p style="font-size:75%;">(Aberdeen Standard Investments)</p><br><br>
+            <p style="color:blue;">"Responsible investing drives better outcomes for...our communities and the planet."</p><p style="font-size:75%;">(Nuveen)</p><br><br>
+            <p>"...we are helping our investors meet their sustainability objectives in a way that only active management can."</p><p style="font-size:75%">(PGIM/Prudential Financial)</p><br><br>
+            <p style="color:red;">"...in pursuit of a better world...improving long-term societal outcomes."</p><p style="font-size:75%">(Calvert)</p><br><br>
+            <p>"...you can seek to generate measurable sustainable outcomes"</p><p style="font-size:75%">(iShares by BlackRock)</p><br><br>
+            <p style="color:yellow;">"ESG investing is an essential part of the solution to a sustainable future."</p><p style="font-size:75%">(Invesco)</p><br><br>
+            <p>"We have the power to help create a sustainable and more prosperous world for all..."</p><p style="font-size:75%">(Schroders)</p><br><br>
+            <p style="color:blue;">"...incorporating ESG research...improves both investment and societal outcomes."</p><p style="font-size:75%">(Parnassus)</p><br><br>
+            <p>"helping the world’s investors achieve better outcomes for the people they serve by incorporating ESG value drivers ...working to build a more resilient and inclusive future"</p><p style="font-size:75%">(State Street)</p><br><br>
+            <p style="color:red;">"AQR ...employ(s) sustainable themes that may...achieve a specific ESG objective."</p><br><br>
+            <p>"Investing with sustainability goals in mind allows investors to influence the way the economy works or how a company behaves..."</p><p style="font-size:75%">(Allianz Global Investors)</p><br><br>
+            <p style="color:yellow;">"...have a positive impact while generating financial return"</p><p style="font-size:75%">(Goldman Sachs Asset Management)</h3></p>
 
             </marquee>
           <!-- End of Marquee -->
 
       </div>
-         
+
     </div>
-    <div id="gsir_plot"></div> 
+    <div id="gsir_plot"></div>
           <script src="{{ url_for('static', filename='js/gsir_plots.js') }}"></script>
 
-          <p><h3><blockquote>As the GSIR data indicates, the ESG Goldrush is in the West, and not the East.
+          <p><h3><blockquote>As the GSIR data indicates, the ESG Goldrush is in the West, and not the East.<br><br>
             ESG investing is not occurring at any significant level outside the U.S. and Europe, and while ESG assets under management increased between 2018 and 2020, primarily from the U.S. ESG goldrush, it decreased in Europe.
-            That means most of the world ignores ESG.<br><br>  According to Statista:<br><br>
+            That means a great deal of the world ignores ESG.<br><br>  According to Statista:<br><br>
             •	Chinese-listed companies account for only 5.4% of total world equity market values.<br><br>
             •	In 2020, the U.S. accounts for 15.9% of global GDP, decreasing to 14.76% by 2026.<br><br>
             •	Europe is currently ~17% of global GDP and also decreasing in relative importance.<br><br>
             •	China alone is 18.34% of global GDP, increasing to 20.06% by 2026.<br><br></blockquote>
 
-    <h2><dt>Country Environment/ESG Scores Increase by Wealth, not Investor Action</dt></h2></dl>
-    <div class="plots">
-      <!-- <div class="plots__plot"></div> -->
-      <select id="selDataset">
-      <option value="dataset1">2020 EPI</option>
-      <option value="dataset2">2018 EPI</option>
-      <option value="dataset3">2016 EPI</option>
-      <option value="dataset4">2014 EPI</option>
-      <option value="dataset5">2012 EPI</option>
-      <option value="dataset6">2010 EPI</option>
-      <option value="dataset7">2008 EPI</option>
-      <option value="dataset8">2006 EPI</option>
-      <option value="dataset9">2004 EPI</option>
-      <option value="dataset10">2002 EPI</option>
-      <option value="dataset11">2000 EPI</option>
-      <option value="dataset12">2020 CCPI</option>
-      <option value="dataset13">2018 CCPI</option>
-      <option value="dataset14">2016 CCPI</option>
-      <option value="dataset15">2014 CCPI</option>
-      <option value="dataset16">2012 CCPI</option>
-      <option value="dataset17">2010 CCPI</option>
-      <option value="dataset18">2008 CCPI</option>
-      <option value="dataset19">2020 Sustainable Competitiveness</option>
-      <option value="dataset20">2019 Sustainable Competitiveness</option>
-      <option value="dataset21">2018 Sustainable Competitiveness</option>
-      <option value="dataset22">2017 Sustainable Competitiveness</option>
-      <option value="dataset23">2016 Sustainable Competitiveness</option>
-      <option value="dataset24">2015 Sustainable Competitiveness</option>
-      <option value="dataset25">2014 Sustainable Competitiveness</option>
-      </select>
-    
-        <div id="plot"></div>
-        <img src="static/assets/country_graph_key.png" alt="country graph key" width = "700" height = "600">
-    
-      <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
-    </div>
-    <section class="w3-container">
-      <p><h3><blockquote><b>EPI concludes:"...good policy results are associated with wealth (GDP per capita), meaning that economic prosperity makes it possible for nations to
-      invest in policies and programs that lead to desirable outcomes...</b><br><br>
-
-      Second, the pursuit of economic prosperity – manifested in industrialization and urbanization – often means more pollution and other strains on
-      ecosystem vitality, especially in the developing world, where air and water emissions remain significant. But at the same time, the data suggest countries
-      need not sacrifice sustainability for economic security or vice versa."</h3></blockquote></p>
-      <p><h3><blockquote>CCPI:"...it is important to note that more than half of the CCPI ranking indicators are qualified in relative terms (better/worse) rather than absolute.
-      <b>Therefore even those countries with high rankings have no reason to sit back and relax. On the contrary, the results illustrate that even if all countries were as committed as
-      the current frontrunners, efforts would still not be sufficient to prevent dangerous climate change...Even the goals of net
-      zero by 2050 or 2060 from Asia are insufficient for a 1.5°C world."</b></h3></blockquote><p>
-      <p><blockquote><h3>GSCI: "Sustainable competitiveness means that current wealth levels are not in danger of being reduced or diminished through over-exploitation of resources (i.e.
-        natural and human resources), the lack of innovation investments required to compete in the globalised markets (i.e. education), or the discrimination,
-        marginalisation or exploitation of segments of a society.<br><br>
-        The leading nations on the GSCI ranking are mostly high-income countries, suggesting a certain <b>correlation between Sustainable Competitiveness score and GDP
-        per capita, or income levels (high income = high sustainability).</b>The same is true when visualizing average deviations of GDP per capita and the sustainable
-        competitiveness score.<br><br>
-        ... Resource economies (e.g. Saudi Arabia, Kuwait) are ranked significantly below
-        their GDP ranks. This indicates that the correlation is not from GDP to sustainable competitiveness, but rather from sustainable competitiveness to income levels. In
-        other words: <b>higher sustainable competitiveness can be associated with higher income levels."</b></h3></blockquote></p>
-      </section>
-    </dl>
-    <h2><dt>Corporate ESG Scores Increase with or without Investor ESG Actions</dt></h2>
-    <div class="plots">
-      
-      
-      <select id="selCompany">
-        <option value="set1">3M Company</option>
-        <option value="set2">Abbott Laboratories</option>
-        <option value="set3">Activision Blizzard Inc.</option>
-        <option value="set4">Adobe Inc.</option>
-        <option value="set5">Air Products and Chemicals Inc.</option>
-        <option value="set6">Align Technology Inc.</option>
-        <option value="set7">Altria Group Inc</option>
-        <option value="set8">American International Group Inc.</option>
-        <option value="set9">American Tower Corporation</option>
-        <option value="set10">Amgen Inc.</option>
-        <option value="set11">Analog Devices Inc.</option>
-        <option value="set12">Anthem Inc.</option>
-        <option value="set13">Apple Inc.</option>
-        <option value="set14">Applied Materials Inc.</option>
-        <option value="set15">Automatic Data Processing Inc.</option>
-        <option value="set16">Berkshire Hathaway Inc. </option>
-        <option value="set17">Biogen Inc.</option>
-        <option value="set18">Booking Holdings Inc.</option>
-        <option value="set19">Boston Scientific Corporation</option>
-        <option value="set20">Bristol-Myers Squibb Company</option>
-        <option value="set21">Charles Schwab Corporation</option>
-        <option value="set22">Charter Communications Inc. Class A</option>
-        <option value="set23">Chipotle Mexican Grill Inc.</option>
-        <option value="set24">Chubb Limited</option>
-        <option value="set25">Cigna Corporation</option>
-        <option value="set26">Cisco Systems Inc.</option>
-        <option value="set27">Colgate-Palmolive Company</option>
-        <option value="set28">Comcast Corporation Class A</option>
-        <option value="set29">ConocoPhillips</option>
-        <option value="set30">Costco Wholesale Corporation</option>
-        <option value="set31">Crown Castle International Corp</option>
-        <option value="set32">CSX Corporation</option>
-        <option value="set33">Danaher Corporation</option>
-        <option value="set34">Deere & Company</option>
-        <option value="set35">DexCom Inc.</option>
-        <option value="set36">Dollar General Corporation</option>
-        <option value="set37">Duke Energy Corporation</option>
-        <option value="set38">eBay Inc.</option>
-        <option value="set39">Ecolab Inc.</option>
-        <option value="set40">Edwards Lifesciences Corporation</option>
-        <option value="set41">Emerson Electric Co.</option>
-        <option value="set42">Equinix Inc.</option>
-        <option value="set43">Exelon Corporation</option>
-        <option value="set44">Exxon Mobil Corporation</option>
-        <option value="set45">Ford Motor Company</option>
-        <option value="set46">Freeport-McMoRan Inc.</option>
-        <option value="set47">Gilead Sciences Inc.</option>
-        <option value="set48">Global Payments Inc.</option>
-        <option value="set49">Goldman Sachs Group Inc.</option>
-        <option value="set50">HCA Healthcare Inc</option>
-        <option value="set51">IDEXX Laboratories Inc.</option>
-        <option value="set52">Illumina Inc.</option>
-        <option value="set53">International Business Machines Corporation</option>
-        <option value="set54">Intuit Inc.</option>
-        <option value="set55">Intuitive Surgical Inc.</option>
-        <option value="set56">Johnson & Johnson</option>
-        <option value="set57">Johnson Controls International plc</option>
-        <option value="set58">Kimberly-Clark Corporation</option>
-        <option value="set59">Linde plc</option>
-        <option value="set60">Lockheed Martin Corporation</option>
-        <option value="set61">Mastercard Incorporated Class A</option>
-        <option value="set62">McDonald's Corporation</option>
-        <option value="set63">Merck & Co. Inc.</option>
-        <option value="set64">Micron Technology Inc.</option>
-        <option value="set65">Microsoft Corporation</option>
-        <option value="set66">Mondelez International Inc. Class A</option>
-        <option value="set67">Morgan Stanley</option>
-        <option value="set68">Newmont Corporation</option>
-        <option value="set69">NextEra Energy Inc.</option>
-        <option value="set70">NIKE Inc. Class B</option>
-        <option value="set71">Oracle Corporation</option>
-        <option value="set72">Philip Morris International Inc.</option>
-        <option value="set73">PNC Financial Services Group Inc.</option>
-        <option value="set74">Procter & Gamble Company</option>
-        <option value="set75">Progressive Corporation</option>
-        <option value="set76">Prologis Inc.</option>
-        <option value="set77">Public Storage</option>
-        <option value="set78">Raytheon Technologies Corporation</option>
-        <option value="set79">Roper Technologies Inc.</option>
-        <option value="set80">ServiceNow Inc.</option>
-        <option value="set81">Sherwin-Williams Company</option>
-        <option value="set82">Southern Company</option>
-        <option value="set83">Starbucks Corporation</option>
-        <option value="set84">Stryker Corporation</option>
-        <option value="set85">T. Rowe Price Group</option>
-        <option value="set86">Target Corporation</option>
-        <option value="set87">TE Connectivity Ltd.</option>
-        <option value="set88">Texas Instruments Incorporated</option>
-        <option value="set89">Thermo Fisher Scientific Inc.</option>
-        <option value="set90">TJX Companies Inc</option>
-        <option value="set91">T-Mobile US Inc.</option>
-        <option value="set92">Truist Financial Corporation</option>
-        <option value="set93">Twitter Inc.</option>
-        <option value="set94">U.S. Bancorp</option>
-        <option value="set95">Union Pacific Corporation</option>
-        <option value="set96">UnitedHealth Group Incorporated</option>
-        <option value="set97">Vertex Pharmaceuticals Incorporated</option>
-        <option value="set98">Visa Inc. Class A</option>
-        <option value="set99">Walt Disney Company</option>
-        <option value="set100">Simon Property Group</option>
-      </select>
-        <div id="companyplot"></div>
-      <script src="{{ url_for('static', filename='js/company_plots.js') }}"></script>
-<p><blockquote><h3>"Currently, the <b>(Corporate ESG) ratings are inconsistent and incomplete,</b>an indication of the work that lies ahead. A Wall Street Journal analysis of ESG grades issued for nearly 1,500 companies by three rating firms found that nearly two-thirds—942 companies—got different grades from different raters. The Journal collected ratings from the websites of three prominent ratings firms in May—Refinitiv Holdings Ltd., MSCI Inc. and Sustainalytics—and identified 1,469 companies scored by all three.  <b>Nearly a third of the companies were deemed ESG leaders by one or more rating firms, but labeled ESG laggards by one or another rater.</b> Credit ratings, by contrast, are broadly consistent." (WSJ, August 10, 2021)</h3></blockquote></h3>
-<br/>
-          
-        </div>
-        <h2><dt>Conclusion</dt></h2><br><br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dsx2vdn7gpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          </iframe>
-        <p><h3><blockquote>1)ESG, previously SRI or Socially Responsible Investing, is primarily focused on shareholder engagement.<br><br>
-        “This article asks how sustainable investing contributes to societal goals…
-        We distinguish three impact mechanisms: shareholder engagement, capital allocation, and indirect impacts, concluding that the impact of shareholder engagement is well supported in the literature, the impact of capital allocation only partially, and indirect impacts lack empirical support.<br><br>
-        Our results suggest that <b>investors who seek impact should pursue shareholder engagement throughout their portfolio</b>, allocate capital to sustainable companies whose growth is limited by external financing conditions, and screen out companies based on the absence of specific environmental, social, and governance practices that can be adopted at reasonable costs.
-        For rating agencies, we outline steps to develop investor impact metrics.
-        For policy makers, we highlight that sustainable investing helps diffuse good business practices but is unlikely to drive a deeper transformation without additional policy measures.”
-        <i>Can Sustainable Investing Save the World? Reviewing the Mechanisms of Investor Impact
-        Julian F. Kölbel, Florian Heeb, Falko Paetzold, Organization & Environment, June 25, 2020</i></blockquote><br><br>
-      
-        <p><h3><blockquote>2)Most ESG shareholder engagement goes nowhere.<br><br>
-        Shareholder votes are never actually presented for shareholder vote or are routinely defeated at shareholder meetings.  Those ESG proposals that do get defeated also routinely just call for more disclosure, risk assessment, and oversight, rather than requesting specific actions or policies.
-        Even those shareholder proposals that do get voted on and usually receive around 30 % of support, are shareholder proposals that are very benign and do not commit companies to any specific actions.<br><br>
-        “Based on our analysis, the most significant change in investors’ voting behavior pertains to environmental and social issues, as these proposals are earning record levels of support in recent years.
-        While support levels for management proposals have not changed significantly, … a number of changes in proponent filings and proxy voting behavior on shareholder proposals…:
-        Fewer investors sitting on the sidelines on environmental & social shareholder proposals, as evidenced by the sharp decrease in recorded “abstain” votes;
-        Shifting environmental and social proposal focus towards disclosure, risk assessment, and oversight, rather than requesting specific actions or policies.
-        More shareholders voting in support of environmental & social proposals, witnessed by the rapidly growing proportion of shareholder proposals receiving at least 30-percent support; and
-        Increased willingness of companies and proponents to work together to forge a solution, supported by a record proportion of environmental and social proposals being withdrawn prior to the vote.”
-        <i>The Long View: US Proxy Voting Trends on E&S Issues from 2000 to 2018.  Harvard Law School Forum on Corporate Governance.  Kosmas Papadopoulos, ISS Analytics, on Thursday, January 31, 2019.</i><br><br>
-        The above observations are supported by Ceres:<br><br>
-        “Investors filed at least 140 climate-related shareholder proposals at U.S. companies during the 2020 proxy season, which wrapped up (last) summer.
-        In one notable success, 53 percent of shareholders at Chevron Corp. voted (last) summer for a resolution that would push the oil firm to ensure its lobbying activities around climate issues align with the Paris Agreement. This marks the first time a climate proposal won a majority of the company’s shareholder votes.
-        …Southern Company — one of the largest electricity producers in the United States — pledged at its annual meeting in May to set a goal to achieve net-zero greenhouse (GHG) emissions by 2050.
-        Ceres, a sustainability nonprofit organization, carefully tracked those 140 climate-related shareholder proposals as they were considered at annual general meetings of shareholders…the 140 proposals averaged an approval vote of 30.7 percent...
-        56 proposals, or 40 percent of those filed, were withdrawn by the investor filer in return for a commitment by the company to address the issue raised in the proposal."<i>How climate proposals fared during the 2020 proxy season, Ceres, September 14, 2020</i></blockquote><br><br>
-      
-        <p><h3><blockquote>3)ESG calls Macbeth to mind, yet again:<br><br>
-        “Tomorrow, and tomorrow, and tomorrow…The way to dusty death….(Life) is a tale, Told by an idiot, full of sound and fury, Signifying nothing.”<br><br>
-        Our Boot Camp data analysis of EPI, CCPI, or Sustainable Competitiveness ratings indicate that, despite all the ESG investor activity with a large number of U.S. companies, the U.S. remains poorly ranked for environmental or ESG performance amongst all countries in the world.
-        As shown by the country-level ESG analysis, it is not shareholder activism that improves ESG performance, it is if a population is wealthy (as measured by either Gross Domestic Product per capita or Gross National Income per capita).
-        it really says we have to put in a carbon tax to transfer climate cleaning technology and wealth to less developed countries to affect ESG meaningfully.   The higher standard of living in the wealthier countries has come at the demise of the shared environment - a cost that has been hidden until now but can no longer be an afterthought.
-        The environment, social goals, and governance get more attention and improvement when the citizens of any given country aren't fighting just to scratch out an existence.
-        And the Bootcamp data analysis shows that company-level ESG ratings are not affected all that much by shareholder engagement.<br><br>
-        A company’s ESG ratings are improving even if they do not have any ESG shareholder votes.<br><br>
-        Some company’s ESG ratings have fallen, despite shareholder engagement and proxy votes or commitments made by the besieged companies.
-        For Western investors, it is a feel-good, armchair solution.  They think their ESG investments are actually making a difference, improving the world while they obtain investment returns.  And active managers encourage the misperception because ESG has been a godsend for them, a means to try – yet again – to take in money and stem the flood of assets towards passive investing.<br><br>
-        And again:<br><br>
-        •	Country environmental ratings, and country ESG ratings as well as company ESG ratings have not been meaningfully affected by shareholder activism.<br><br>
-        •	But, for improving the environment, it has certainly not yet made a difference or enough of a difference.<br><br>
-        •	Just by observation of the daily headlines it is easy to make that conclusion: the highest temperatures, the disastrous floods, the rising sea levels, the vast forest fires, the loss of species, etc.<br><br>
-        •	And the same for social or governance issues. Most shareholder votes or engagement are relatively benign calls for more reporting and disclosure.  Most initiatives are defeated by significant margins.  And country and company ESG ratings weakly correlate with shareholder engagement.
-      </section>
+              The country and company analyses on the following pages strongly indicate the ESG promises have been largely unfulfilled.
       </div>
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
-  
+
   <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

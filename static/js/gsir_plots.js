@@ -61,7 +61,9 @@ d3.json(gsir_url).then(function(gsirdata) {
         var plotdata = [trace1, trace2, trace3, trace4, trace5];
               
         var layout = {barmode: 'group',
-        autosize: true,
+        autosize: false,
+        width: 600, 
+        height: 400, 
         title: {
             text:'Total ESG Investment By Year,Region',
             font: {

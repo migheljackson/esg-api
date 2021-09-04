@@ -112,11 +112,11 @@ d3.json(url).then(function(data) {
   color_dict = {"L": "Red", "LM": "orange", "UM": "yellow", "H": "Green"}
   var symbol_array = []
   var color = []
-    console.log(data);
+    // console.log(data);
     for (var i = 0; i < d.length; i++) {
-      console.log(d[i]["name"]);
-      country_data[i] = d[i]["name"];
-      console.log(d[i]["GDP PER CAPITA 2020"]);
+      //console.log(d[i]["name"]);
+      // country_data[i] = d[i]["name"];
+      // console.log(d[i]["GDP PER CAPITA 2020"]);
 
       gdp_per_cap_2020[i] = d[i]["GDP PER CAPITA 2020"];
       gdp_per_cap_2019[i] = d[i]["GDP PER CAPITA 2019"];
@@ -140,7 +140,7 @@ d3.json(url).then(function(data) {
       gdp_per_cap_2001[i] = d[i]["GDP PER CAPITA 2001"];
       gdp_per_cap_2000[i] = d[i]["GDP PER CAPITA 2000"];
 
-      console.log(d[i]["EPI 2020"]);
+      // console.log(d[i]["EPI 2020"]);
 
       epi_2020[i] = d[i]["EPI 2020"];
       epi_2018[i] = d[i]["EPI 2018"];
@@ -176,7 +176,7 @@ d3.json(url).then(function(data) {
       sus_comp_2015[i] = d[i]["2015 Sustainable Competitiveness"];
       sus_comp_2014[i] = d[i]["2014 Sustainable Competitiveness"];
 
-      console.log(d[i]["2020"]);
+      // console.log(d[i]["2020"]);
 
       country_pop_2020[i] = (d[i]["2020"]) / 7000000;
       country_pop_2019[i] = (d[i]["2019"]) / 7000000;
@@ -201,9 +201,9 @@ d3.json(url).then(function(data) {
       country_pop_2000[i] = (d[i]["2000"]) / 7000000;
 
 
-      console.log(d[i]["Continent Name"]);
+      // console.log(d[i]["Continent Name"]);
 
-      continent[i] = d[i]["Continent Name"];
+      // continent[i] = d[i]["Continent Name"];
 
       gni_2019[i] = d[i]["GNI per capita 2019"];
       gni_2018[i] = d[i]["GNI per capita 2018"];

@@ -2,7 +2,7 @@ const gsir_url="https://country-esg-api.herokuapp.com/api/v1.0/gsir-ESG"
 d3.json(gsir_url).then(function(gsirdata) {
     var g=gsirdata.result
     console.log("gsir records retrieved:",g.length);
-    console.log(g);
+    // console.log(g);
 
     var gsia_region = []
     var esg_tot_2020 = []
@@ -20,8 +20,8 @@ d3.json(gsir_url).then(function(gsirdata) {
             esg_tot_2012[i] = g[i]["Total ESG Investing 2012"];
             gsia_region[i] = g[i]["GSIA Region"];
         }
-        console.log(gsia_region);
-        console.log(esg_tot_2020);
+        // console.log(gsia_region);
+        // console.log(esg_tot_2020);
             
         var trace1 = {
             x: gsia_region,

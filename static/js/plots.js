@@ -115,7 +115,7 @@ d3.json(url).then(function(data) {
     // console.log(data);
     for (var i = 0; i < d.length; i++) {
       //console.log(d[i]["name"]);
-      // country_data[i] = d[i]["name"];
+      country_data[i] = d[i]["name"];
       // console.log(d[i]["GDP PER CAPITA 2020"]);
 
       gdp_per_cap_2020[i] = d[i]["GDP PER CAPITA 2020"];
@@ -203,7 +203,7 @@ d3.json(url).then(function(data) {
 
       // console.log(d[i]["Continent Name"]);
 
-      // continent[i] = d[i]["Continent Name"];
+      continent[i] = d[i]["Continent Name"];
 
       gni_2019[i] = d[i]["GNI per capita 2019"];
       gni_2018[i] = d[i]["GNI per capita 2018"];

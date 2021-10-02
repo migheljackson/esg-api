@@ -7,13 +7,17 @@ import pymongo
 import pandas as pd
 from joblib import dump, load
 
-import certifi
+
 
 # Create an instance of our Flask app.
 app = Flask(__name__)
 CORS(app)
+
+import ssl
+import certifi
+
 # Create connection variable
-conn = 'mongodb+srv://admin:admin@cluster0.5lstl.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-efjkbc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+conn = 'mongodb+srv://admin:admin@cluster0.5lstl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 # Pass connection to the pymongo instance.
 client = pymongo.MongoClient(conn, tlsCAFile=certifi.where())

@@ -5,3 +5,6 @@ flask_cors
 pymongo[srv]
 joblib
 pandas
+numpy
+glob
+sklearn

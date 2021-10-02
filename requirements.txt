@@ -4,3 +4,4 @@ flask
 flask_cors
 pymongo[srv]
 joblib
+pandas

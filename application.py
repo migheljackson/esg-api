@@ -4,6 +4,11 @@ from flask_cors import CORS
 # Import our pymongo library, which lets us connect our Flask app to our Mongo database.
 import pymongo
 
+import pandas as pd
+from joblib import dump, load
+
+
+
 # Create an instance of our Flask app.
 app = Flask(__name__)
 CORS(app)
@@ -19,6 +24,8 @@ db = client.International_ESG_df
 country = db.ESG
 company = db.CompanyESG
 gsir = db.GSIR
+
+clf=load('model.pkl')
 
 # Set route
 @app.route('/')
@@ -291,9 +298,47 @@ def findAll():
     return jsonify({'result ':output})
 
 
-@app.route('/test/')
-def testplot():
-    return render_template('test.html')
+@app.route('/flag',methods=['GET','POST'])
+def flag():
+    if request.method == 'GET':
+        return (render_template('fraud-flag.html'))
+    
+    if request.method == 'POST':
+      nil = request.form['nil']
+      she = request.form['she']
+      cac = request.form['cac']
+      cr = request.form['cr']
+      pl = request.form['pl']
+      oil = request.form['oil']
+      itb = request.form['itb']
+      assets = request.form['assets']
+
+      input_variables = pd.DataFrame([[nil, she, cac, cr, pl, oil, itb, assets]],
+                                       columns=['Net Income', 'Total Shareholder Equity', 'Cash and Cash Equivalent', 'Restricted Cash', 'Profit',
+                                                'Operating Income', 'Tax Expense Benefit', 'Total Assets'],
+                                       dtype='float',
+                                       index=['input'])
+      
+      pred = clf.predict(input_variables)[0]
+      print('prediction: ',pred)
+
+      if pred>0:
+        prediction="Fraud Indicators Found."
+      else:
+        prediction="No Fraud Indicators Found."
+
+      original_input={'Net Income': nil, 
+                      'Total Shareholder Equity': she, 
+                       'Cash and Cash Equivalent': cac, 
+                       'Restricted Cash': cr, 
+                       'Profit': pl, 
+                       'Operating Income': oil, 
+                       'Tax Expense Benefit': itb, 
+                       'Total Assets': assets}
+
+      print (original_input)
+
+      return render_template('fraud-result.html', prediction=prediction)
 
 
 if __name__ == "__main__":

@@ -22,4 +22,7 @@ transform: translateY(-100%);
 transform: translateY(100%);
 }
 }
-
+.result {
+    align-content: center;
+    background-color: gray;
+}

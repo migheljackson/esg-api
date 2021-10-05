@@ -60,7 +60,7 @@ def get_all_countries():
   for i in country.find():
     output.append({'name' : i['Country'],
                 'Continent Name' : i['Continent_Name'],
-                'GSIA Region' : i['gsia_region'],
+                # 'GSIA Region' : i['gsia_region'],
                 '2020' : i["2020"],
                 '2019' : i["2019"],
                 '2018' : i["2018"],
@@ -154,11 +154,11 @@ def get_all_countries():
                 '2016 Sustainable Competitiveness' : i['2016 Sustainable Competitiveness'],
                 '2015 Sustainable Competitiveness' : i['2015 Sustainable Competitiveness'],
                 '2014 Sustainable Competitiveness' : i['2014 Sustainable Competitiveness'],
-                'Total ESG Investing 2020' : i['esg_tot_2020'],
-                'Total ESG Investing 2018' : i['esg_tot_2018'],
-                'Total ESG Investing 2016' : i['esg_tot_2016'],
-                'Total ESG Investing 2014' : i['esg_tot_2014'],
-                'Total ESG Investing 2012' : i['esg_tot_2012'] 
+                # 'Total ESG Investing 2020' : i['esg_tot_2020'],
+                # 'Total ESG Investing 2018' : i['esg_tot_2018'],
+                # 'Total ESG Investing 2016' : i['esg_tot_2016'],
+                # 'Total ESG Investing 2014' : i['esg_tot_2014'],
+                # 'Total ESG Investing 2012' : i['esg_tot_2012'] 
                 })
   return jsonify({'result' : output})
 
